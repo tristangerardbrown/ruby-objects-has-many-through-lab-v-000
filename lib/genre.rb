@@ -21,7 +21,7 @@ attr_accessor :name
 
   def artists
     Song.all collect do |song|
-      song.artist 
+      song.artist
     end 
   end
 end
