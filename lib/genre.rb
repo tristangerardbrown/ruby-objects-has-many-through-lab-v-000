@@ -6,17 +6,17 @@ attr_accessor :name
 
   def initialize(name)
     @name = name
-    @@all << self 
+    @@all << self
   end
 
   def songs
     Song.all collect do |song|
-      song.genre = self 
+      song.genre = self
     end 
   end
 
   def self.all
-    @@all 
+    @@all
   end
 
   def artists
