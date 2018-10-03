@@ -16,7 +16,7 @@ class Doctor
   end
 
   def appointments
-    Appointments.all.collect do |appointments|
+    Appointments.all.select do |appointments|
       appointments.doctor = self
     end
   end
