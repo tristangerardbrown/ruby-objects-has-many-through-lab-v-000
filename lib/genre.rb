@@ -10,7 +10,7 @@ attr_accessor :name
   end
 
   def songs
-    Song.all.collect do |song|
+    Song.all.find do |song|
       song.genre = self
     end
   end
