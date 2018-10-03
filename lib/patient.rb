@@ -24,6 +24,6 @@ class Patient
     Appointment.all.collect do |appointment|
       appointment.doctor
     end
-  end 
+  end
 
 end
