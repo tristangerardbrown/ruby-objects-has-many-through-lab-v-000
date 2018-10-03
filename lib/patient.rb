@@ -1,4 +1,3 @@
-require "pry"
 
 class Patient
   @@all = []
@@ -24,8 +23,7 @@ class Patient
   end
 
   def doctors
-    binding.pry
-    Appointment.all.map do |appointment|
+    self.appointments.each do |appointment|
       appointment.doctor
     end
   end
